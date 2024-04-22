@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "hDVXx1zfGJBg6SKx57mtm1kQLMoARIIzk1IgO5kzfVcEix1dJdwlzvZHhGPxXudqwTXdcXLtNTuxSuymmuQgjQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HIGH TECH\\source\\repos\\Gestion_caise\\Gestion_caise.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HIGH TECH\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
+    "C:\\Users\\HIGH TECH\\.nuget\\packages\\iconextractor\\1.0.1\\iconextractor.1.0.1.nupkg.sha512",
+    "C:\\Users\\HIGH TECH\\.nuget\\packages\\iconextractor.dll\\1.0.2\\iconextractor.dll.1.0.2.nupkg.sha512",
+    "C:\\Users\\HIGH TECH\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\HIGH TECH\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Le package 'IconExtractor.dll 1.0.2' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' au lieu du framework cible du projet 'net6.0-windows7.0'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
+      "libraryId": "IconExtractor.dll",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
