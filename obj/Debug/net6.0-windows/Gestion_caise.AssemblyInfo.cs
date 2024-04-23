@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gestion_caise")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69793b86920df6ad4049f192391f6a7f611b21a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gestion_caise")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gestion_caise")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

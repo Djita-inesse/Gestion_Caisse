@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XNw/XtozTlHohjr9P4FeHNonY0f+f1t96MZS3cVnEFVV0QwLBa7E2DdEBY4QhOxM2IGDBUs0IERzmZDDQjfA4Q==",
+  "dgSpecHash": "JgghkKoinIg5CcxH1ah6RJXxAn9++8V6TdZra5JYrCDpJczTsiPtjbhHLbXwq8LdNWnGdu3Hn25fDGHiXC+WpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HIGH TECH\\source\\repos\\Gestion_caise\\Gestion_caise.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\HP USA\\Desktop\\tp\\gestion\\Gestion_caise.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP USA\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
+    "C:\\Users\\HP USA\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\HP USA\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
