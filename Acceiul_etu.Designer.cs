@@ -123,12 +123,13 @@
             guna2Panel2.Controls.Add(guna2PictureBox2);
             guna2Panel2.Controls.Add(pictureBox2);
             guna2Panel2.CustomizableEdges = customizableEdges17;
-            guna2Panel2.Location = new Point(-248, -1);
-            guna2Panel2.MaximumSize = new Size(300, 540);
-            guna2Panel2.MinimumSize = new Size(247, 360);
+            guna2Panel2.Location = new Point(-354, -2);
+            guna2Panel2.Margin = new Padding(4, 5, 4, 5);
+            guna2Panel2.MaximumSize = new Size(429, 900);
+            guna2Panel2.MinimumSize = new Size(353, 600);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2Panel2.Size = new Size(247, 540);
+            guna2Panel2.Size = new Size(353, 900);
             guna2Panel2.TabIndex = 6;
             // 
             // guna2Button7
@@ -143,10 +144,11 @@
             guna2Button7.FillColor = Color.White;
             guna2Button7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2Button7.ForeColor = Color.FromArgb(111, 31, 119);
-            guna2Button7.Location = new Point(35, 409);
+            guna2Button7.Location = new Point(50, 682);
+            guna2Button7.Margin = new Padding(4, 5, 4, 5);
             guna2Button7.Name = "guna2Button7";
             guna2Button7.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button7.Size = new Size(161, 36);
+            guna2Button7.Size = new Size(230, 60);
             guna2Button7.TabIndex = 1;
             guna2Button7.Text = "Deconnecter";
             // 
@@ -157,11 +159,12 @@
             guna2CirclePictureBox6.Image = (Image)resources.GetObject("guna2CirclePictureBox6.Image");
             guna2CirclePictureBox6.ImageRotate = 0F;
             guna2CirclePictureBox6.InitialImage = (Image)resources.GetObject("guna2CirclePictureBox6.InitialImage");
-            guna2CirclePictureBox6.Location = new Point(56, 224);
+            guna2CirclePictureBox6.Location = new Point(80, 373);
+            guna2CirclePictureBox6.Margin = new Padding(4, 5, 4, 5);
             guna2CirclePictureBox6.Name = "guna2CirclePictureBox6";
             guna2CirclePictureBox6.ShadowDecoration.CustomizableEdges = customizableEdges3;
             guna2CirclePictureBox6.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CirclePictureBox6.Size = new Size(35, 31);
+            guna2CirclePictureBox6.Size = new Size(50, 52);
             guna2CirclePictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2CirclePictureBox6.TabIndex = 7;
             guna2CirclePictureBox6.TabStop = false;
@@ -173,11 +176,12 @@
             guna2CirclePictureBox5.Image = (Image)resources.GetObject("guna2CirclePictureBox5.Image");
             guna2CirclePictureBox5.ImageRotate = 0F;
             guna2CirclePictureBox5.InitialImage = (Image)resources.GetObject("guna2CirclePictureBox5.InitialImage");
-            guna2CirclePictureBox5.Location = new Point(56, 170);
+            guna2CirclePictureBox5.Location = new Point(80, 283);
+            guna2CirclePictureBox5.Margin = new Padding(4, 5, 4, 5);
             guna2CirclePictureBox5.Name = "guna2CirclePictureBox5";
             guna2CirclePictureBox5.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2CirclePictureBox5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CirclePictureBox5.Size = new Size(35, 31);
+            guna2CirclePictureBox5.Size = new Size(50, 52);
             guna2CirclePictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2CirclePictureBox5.TabIndex = 6;
             guna2CirclePictureBox5.TabStop = false;
@@ -189,11 +193,12 @@
             guna2CirclePictureBox3.Image = (Image)resources.GetObject("guna2CirclePictureBox3.Image");
             guna2CirclePictureBox3.ImageRotate = 0F;
             guna2CirclePictureBox3.InitialImage = (Image)resources.GetObject("guna2CirclePictureBox3.InitialImage");
-            guna2CirclePictureBox3.Location = new Point(56, 83);
+            guna2CirclePictureBox3.Location = new Point(80, 138);
+            guna2CirclePictureBox3.Margin = new Padding(4, 5, 4, 5);
             guna2CirclePictureBox3.Name = "guna2CirclePictureBox3";
             guna2CirclePictureBox3.ShadowDecoration.CustomizableEdges = customizableEdges5;
             guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CirclePictureBox3.Size = new Size(43, 33);
+            guna2CirclePictureBox3.Size = new Size(61, 55);
             guna2CirclePictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2CirclePictureBox3.TabIndex = 5;
             guna2CirclePictureBox3.TabStop = false;
@@ -205,11 +210,12 @@
             guna2CirclePictureBox4.Image = (Image)resources.GetObject("guna2CirclePictureBox4.Image");
             guna2CirclePictureBox4.ImageRotate = 0F;
             guna2CirclePictureBox4.InitialImage = (Image)resources.GetObject("guna2CirclePictureBox4.InitialImage");
-            guna2CirclePictureBox4.Location = new Point(56, 122);
+            guna2CirclePictureBox4.Location = new Point(80, 203);
+            guna2CirclePictureBox4.Margin = new Padding(4, 5, 4, 5);
             guna2CirclePictureBox4.Name = "guna2CirclePictureBox4";
             guna2CirclePictureBox4.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2CirclePictureBox4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CirclePictureBox4.Size = new Size(43, 33);
+            guna2CirclePictureBox4.Size = new Size(61, 55);
             guna2CirclePictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2CirclePictureBox4.TabIndex = 1;
             guna2CirclePictureBox4.TabStop = false;
@@ -229,10 +235,11 @@
             guna2Button3.ForeColor = Color.White;
             guna2Button3.HoverState.FillColor = Color.FromArgb(110, 30, 118);
             guna2Button3.ImageSize = new Size(30, 30);
-            guna2Button3.Location = new Point(92, 222);
+            guna2Button3.Location = new Point(131, 370);
+            guna2Button3.Margin = new Padding(4, 5, 4, 5);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2Button3.Size = new Size(115, 33);
+            guna2Button3.Size = new Size(164, 55);
             guna2Button3.TabIndex = 4;
             guna2Button3.Text = "Parametre";
             guna2Button3.Tile = true;
@@ -251,10 +258,11 @@
             guna2Button4.ForeColor = Color.White;
             guna2Button4.HoverState.FillColor = Color.FromArgb(110, 30, 118);
             guna2Button4.ImageSize = new Size(30, 30);
-            guna2Button4.Location = new Point(92, 170);
+            guna2Button4.Location = new Point(131, 283);
+            guna2Button4.Margin = new Padding(4, 5, 4, 5);
             guna2Button4.Name = "guna2Button4";
             guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2Button4.Size = new Size(115, 31);
+            guna2Button4.Size = new Size(164, 52);
             guna2Button4.TabIndex = 3;
             guna2Button4.Text = "Payement";
             guna2Button4.TextAlign = HorizontalAlignment.Left;
@@ -275,10 +283,11 @@
             guna2Button5.ForeColor = Color.White;
             guna2Button5.HoverState.FillColor = Color.FromArgb(110, 30, 118);
             guna2Button5.ImageSize = new Size(30, 30);
-            guna2Button5.Location = new Point(92, 122);
+            guna2Button5.Location = new Point(131, 203);
+            guna2Button5.Margin = new Padding(4, 5, 4, 5);
             guna2Button5.Name = "guna2Button5";
             guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Button5.Size = new Size(115, 33);
+            guna2Button5.Size = new Size(164, 55);
             guna2Button5.TabIndex = 2;
             guna2Button5.Text = "Formation";
             guna2Button5.TextAlign = HorizontalAlignment.Left;
@@ -298,10 +307,11 @@
             guna2Button6.ForeColor = Color.White;
             guna2Button6.HoverState.FillColor = Color.FromArgb(110, 30, 118);
             guna2Button6.ImageSize = new Size(30, 30);
-            guna2Button6.Location = new Point(92, 79);
+            guna2Button6.Location = new Point(131, 132);
+            guna2Button6.Margin = new Padding(4, 5, 4, 5);
             guna2Button6.Name = "guna2Button6";
             guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Button6.Size = new Size(104, 35);
+            guna2Button6.Size = new Size(149, 58);
             guna2Button6.TabIndex = 1;
             guna2Button6.Text = "Etudiant";
             guna2Button6.TextAlign = HorizontalAlignment.Left;
@@ -314,10 +324,11 @@
             guna2PictureBox2.FillColor = Color.RosyBrown;
             guna2PictureBox2.Image = (Image)resources.GetObject("guna2PictureBox2.Image");
             guna2PictureBox2.ImageRotate = 0F;
-            guna2PictureBox2.Location = new Point(32, 53);
+            guna2PictureBox2.Location = new Point(46, 88);
+            guna2PictureBox2.Margin = new Padding(4, 5, 4, 5);
             guna2PictureBox2.Name = "guna2PictureBox2";
             guna2PictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2PictureBox2.Size = new Size(181, 10);
+            guna2PictureBox2.Size = new Size(259, 17);
             guna2PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox2.TabIndex = 1;
             guna2PictureBox2.TabStop = false;
@@ -325,9 +336,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(56, 12);
+            pictureBox2.Location = new Point(80, 20);
+            pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(129, 35);
+            pictureBox2.Size = new Size(184, 58);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -353,11 +365,10 @@
             ajout_etudiant.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
             ajout_etudiant.ForeColor = Color.FromArgb(111, 31, 119);
             ajout_etudiant.Image = (Image)resources.GetObject("ajout_etudiant.Image");
-            ajout_etudiant.Location = new Point(728, 82);
-            ajout_etudiant.Margin = new Padding(2, 2, 2, 2);
+            ajout_etudiant.Location = new Point(1040, 137);
             ajout_etudiant.Name = "ajout_etudiant";
             ajout_etudiant.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            ajout_etudiant.Size = new Size(139, 35);
+            ajout_etudiant.Size = new Size(199, 58);
             ajout_etudiant.TabIndex = 11;
             ajout_etudiant.Text = "Ajouter etudiant";
             ajout_etudiant.Click += ajouter_etudiant;
@@ -378,18 +389,20 @@
             guna2Panel1.Controls.Add(formation);
             guna2Panel1.Controls.Add(payement);
             guna2Panel1.CustomizableEdges = customizableEdges31;
-            guna2Panel1.Location = new Point(9, 1);
+            guna2Panel1.Location = new Point(13, 2);
+            guna2Panel1.Margin = new Padding(4, 5, 4, 5);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            guna2Panel1.Size = new Size(208, 436);
+            guna2Panel1.Size = new Size(297, 727);
             guna2Panel1.TabIndex = 12;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-2, 59);
+            pictureBox1.Location = new Point(-3, 98);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(207, 10);
+            pictureBox1.Size = new Size(296, 17);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click_1;
@@ -397,9 +410,10 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(21, 3);
+            pictureBox3.Location = new Point(30, 5);
+            pictureBox3.Margin = new Padding(4, 5, 4, 5);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(163, 50);
+            pictureBox3.Size = new Size(233, 83);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
@@ -416,10 +430,11 @@
             guna2Button1.FillColor = Color.White;
             guna2Button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2Button1.ForeColor = Color.FromArgb(111, 31, 119);
-            guna2Button1.Location = new Point(33, 395);
+            guna2Button1.Location = new Point(47, 658);
+            guna2Button1.Margin = new Padding(4, 5, 4, 5);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            guna2Button1.Size = new Size(133, 31);
+            guna2Button1.Size = new Size(190, 52);
             guna2Button1.TabIndex = 5;
             guna2Button1.Text = "Deconnecter";
             // 
@@ -437,10 +452,11 @@
             etudiant.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             etudiant.ForeColor = Color.White;
             etudiant.Image = (Image)resources.GetObject("etudiant.Image");
-            etudiant.Location = new Point(33, 134);
+            etudiant.Location = new Point(47, 223);
+            etudiant.Margin = new Padding(4, 5, 4, 5);
             etudiant.Name = "etudiant";
             etudiant.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            etudiant.Size = new Size(133, 31);
+            etudiant.Size = new Size(190, 52);
             etudiant.TabIndex = 1;
             etudiant.Text = "Etudiant";
             // 
@@ -460,10 +476,11 @@
             parametre.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             parametre.ForeColor = Color.White;
             parametre.Image = (Image)resources.GetObject("parametre.Image");
-            parametre.Location = new Point(33, 247);
+            parametre.Location = new Point(47, 412);
+            parametre.Margin = new Padding(4, 5, 4, 5);
             parametre.Name = "parametre";
             parametre.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            parametre.Size = new Size(133, 32);
+            parametre.Size = new Size(190, 53);
             parametre.TabIndex = 4;
             parametre.Text = "Parametre";
             // 
@@ -481,10 +498,11 @@
             formation.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             formation.ForeColor = Color.White;
             formation.Image = (Image)resources.GetObject("formation.Image");
-            formation.Location = new Point(33, 171);
+            formation.Location = new Point(47, 285);
+            formation.Margin = new Padding(4, 5, 4, 5);
             formation.Name = "formation";
             formation.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            formation.Size = new Size(133, 32);
+            formation.Size = new Size(190, 53);
             formation.TabIndex = 2;
             formation.Text = "Formation";
             // 
@@ -502,10 +520,11 @@
             payement.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             payement.ForeColor = Color.White;
             payement.Image = (Image)resources.GetObject("payement.Image");
-            payement.Location = new Point(33, 209);
+            payement.Location = new Point(47, 348);
+            payement.Margin = new Padding(4, 5, 4, 5);
             payement.Name = "payement";
             payement.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            payement.Size = new Size(133, 32);
+            payement.Size = new Size(190, 53);
             payement.TabIndex = 3;
             payement.Text = "Payement";
             // 
@@ -520,18 +539,20 @@
             guna2Panel3.Controls.Add(guna2HtmlLabel2);
             guna2Panel3.Controls.Add(guna2HtmlLabel1);
             guna2Panel3.CustomizableEdges = customizableEdges33;
-            guna2Panel3.Location = new Point(223, 4);
+            guna2Panel3.Location = new Point(319, 7);
+            guna2Panel3.Margin = new Padding(4, 5, 4, 5);
             guna2Panel3.Name = "guna2Panel3";
             guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            guna2Panel3.Size = new Size(644, 66);
+            guna2Panel3.Size = new Size(920, 110);
             guna2Panel3.TabIndex = 13;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(538, 3);
+            pictureBox4.Location = new Point(791, 13);
+            pictureBox4.Margin = new Padding(4, 5, 4, 5);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(41, 39);
+            pictureBox4.Size = new Size(50, 51);
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
             // 
@@ -540,9 +561,10 @@
             guna2HtmlLabel3.BackColor = Color.Transparent;
             guna2HtmlLabel3.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel3.ForeColor = Color.FromArgb(111, 31, 119);
-            guna2HtmlLabel3.Location = new Point(585, 8);
+            guna2HtmlLabel3.Location = new Point(836, 13);
+            guna2HtmlLabel3.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(56, 24);
+            guna2HtmlLabel3.Size = new Size(87, 34);
             guna2HtmlLabel3.TabIndex = 2;
             guna2HtmlLabel3.Text = "Admin";
             guna2HtmlLabel3.Click += guna2HtmlLabel3_Click;
@@ -551,9 +573,10 @@
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2HtmlLabel2.Location = new Point(25, 28);
+            guna2HtmlLabel2.Location = new Point(36, 47);
+            guna2HtmlLabel2.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(77, 17);
+            guna2HtmlLabel2.Size = new Size(111, 24);
             guna2HtmlLabel2.TabIndex = 1;
             guna2HtmlLabel2.Text = "gerer etudiant";
             // 
@@ -561,25 +584,27 @@
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Times New Roman", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel1.Location = new Point(25, 3);
+            guna2HtmlLabel1.Location = new Point(36, 5);
+            guna2HtmlLabel1.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(58, 19);
+            guna2HtmlLabel1.Size = new Size(90, 27);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Etudiant";
             // 
             // Acceiul_etu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(879, 421);
+            ClientSize = new Size(1256, 702);
             Controls.Add(guna2Panel3);
             Controls.Add(guna2Panel1);
             Controls.Add(ajout_etudiant);
             Controls.Add(guna2Panel2);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            MaximumSize = new Size(1296, 576);
-            MinimumSize = new Size(895, 408);
+            Margin = new Padding(4, 5, 4, 5);
+            MaximumSize = new Size(1842, 923);
+            MinimumSize = new Size(1269, 643);
             Name = "Acceiul_etu";
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;

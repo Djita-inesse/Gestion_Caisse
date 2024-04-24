@@ -48,13 +48,9 @@
               "target": "Package",
               "version": "[2.0.4.6, )"
             },
-            "IconExtractor": {
+            "MySql.Data": {
               "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "IconExtractor.dll": {
-              "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[8.3.0, )"
             }
           },
           "imports": [

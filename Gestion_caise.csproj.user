@@ -4,10 +4,13 @@
     <Compile Update="Acceiul_etu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Acceiul_formation.cs">
+    <Compile Update="Acceuil_formation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Ajout_etu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Ajout_formation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="effectuer_payement.cs">
@@ -16,7 +19,7 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="formation.cs">
+    <Compile Update="Modifier_formation.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
