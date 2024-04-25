@@ -396,7 +396,6 @@
             // 
             // guna2Panel1
             // 
-            guna2Panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             guna2Panel1.AutoSize = true;
             guna2Panel1.BackColor = Color.FromArgb(111, 31, 119);
             guna2Panel1.BorderColor = Color.Silver;
@@ -414,7 +413,7 @@
             guna2Panel1.Margin = new Padding(4, 5, 4, 5);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            guna2Panel1.Size = new Size(301, 1058);
+            guna2Panel1.Size = new Size(301, 686);
             guna2Panel1.TabIndex = 12;
             // 
             // pictureBox1
@@ -451,7 +450,7 @@
             guna2Button1.FillColor = Color.White;
             guna2Button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             guna2Button1.ForeColor = Color.FromArgb(111, 31, 119);
-            guna2Button1.Location = new Point(47, 658);
+            guna2Button1.Location = new Point(47, 616);
             guna2Button1.Margin = new Padding(4, 5, 4, 5);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges22;
