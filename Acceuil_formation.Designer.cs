@@ -408,7 +408,6 @@
             nom.HeaderText = "Nom";
             nom.MinimumWidth = 8;
             nom.Name = "nom";
-            nom.ReadOnly = true;
             nom.SortMode = DataGridViewColumnSortMode.NotSortable;
             // 
             // domaine
@@ -416,7 +415,6 @@
             domaine.HeaderText = "Domaine formation";
             domaine.MinimumWidth = 8;
             domaine.Name = "domaine";
-            domaine.ReadOnly = true;
             domaine.SortMode = DataGridViewColumnSortMode.NotSortable;
             // 
             // duree
@@ -424,7 +422,6 @@
             duree.HeaderText = "Durée formation";
             duree.MinimumWidth = 8;
             duree.Name = "duree";
-            duree.ReadOnly = true;
             duree.SortMode = DataGridViewColumnSortMode.NotSortable;
             // 
             // cout
@@ -432,7 +429,6 @@
             cout.HeaderText = "Cout formationn";
             cout.MinimumWidth = 8;
             cout.Name = "cout";
-            cout.ReadOnly = true;
             cout.SortMode = DataGridViewColumnSortMode.NotSortable;
             // 
             // supp
@@ -469,7 +465,7 @@
             modifier_formation.FillColor = Color.White;
             modifier_formation.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             modifier_formation.ForeColor = Color.FromArgb(111, 31, 119);
-            modifier_formation.Location = new Point(452, 182);
+            modifier_formation.Location = new Point(451, 182);
             modifier_formation.Name = "modifier_formation";
             modifier_formation.ShadowDecoration.CustomizableEdges = customizableEdges20;
             modifier_formation.Size = new Size(219, 58);
@@ -521,11 +517,11 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2DataGridView dataformation;
+        private Guna.UI2.WinForms.Guna2Button supp;
+        private Guna.UI2.WinForms.Guna2Button modifier_formation;
         private DataGridViewTextBoxColumn nom;
         private DataGridViewTextBoxColumn domaine;
         private DataGridViewTextBoxColumn duree;
         private DataGridViewTextBoxColumn cout;
-        private Guna.UI2.WinForms.Guna2Button supp;
-        private Guna.UI2.WinForms.Guna2Button modifier_formation;
     }
 }

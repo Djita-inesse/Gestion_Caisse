@@ -12,18 +12,20 @@ namespace Gestion_caise
         public String domaine;
         public String duree;
         public Double cout;
+        public DateTime datedebut;
 
         public  FormationClasse()
         {
 
         }
 
-        public  FormationClasse(String lenom, String ledomaine, String leduree, Double lecout)
+        public  FormationClasse(String lenom, String ledomaine, String leduree, Double lecout, DateTime datedebut)
         {
-            nom = ledomaine;
-            domaine = ledomaine;
-            duree = leduree;
-            cout = lecout;
+            this.nom = ledomaine;
+            this.domaine = ledomaine;
+            this.duree = leduree;
+            this.cout = lecout;
+            this.datedebut = datedebut;
         }
 
         

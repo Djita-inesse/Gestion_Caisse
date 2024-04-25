@@ -64,6 +64,15 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             guna2CirclePictureBox6 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -91,6 +100,17 @@
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            supprime = new Guna.UI2.WinForms.Guna2Button();
+            dataetudiant = new Guna.UI2.WinForms.Guna2DataGridView();
+            matricule = new DataGridViewTextBoxColumn();
+            nom = new DataGridViewTextBoxColumn();
+            prenom = new DataGridViewTextBoxColumn();
+            sexe = new DataGridViewTextBoxColumn();
+            date = new DataGridViewTextBoxColumn();
+            lieu = new DataGridViewTextBoxColumn();
+            tel = new DataGridViewTextBoxColumn();
+            nomf = new DataGridViewTextBoxColumn();
+            modifier = new Guna.UI2.WinForms.Guna2Button();
             guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox5).BeginInit();
@@ -103,6 +123,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataetudiant).BeginInit();
             SuspendLayout();
             // 
             // guna2Panel2
@@ -351,9 +372,9 @@
             // 
             // ajout_etudiant
             // 
-            ajout_etudiant.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            ajout_etudiant.BackColor = Color.FromArgb(111, 31, 119);
-            ajout_etudiant.BorderColor = Color.Gainsboro;
+            ajout_etudiant.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            ajout_etudiant.BackColor = Color.White;
+            ajout_etudiant.BorderColor = Color.FromArgb(192, 0, 192);
             ajout_etudiant.BorderRadius = 8;
             ajout_etudiant.BorderThickness = 1;
             ajout_etudiant.CustomizableEdges = customizableEdges19;
@@ -362,13 +383,13 @@
             ajout_etudiant.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             ajout_etudiant.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             ajout_etudiant.FillColor = Color.White;
-            ajout_etudiant.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            ajout_etudiant.Font = new Font("Times New Roman", 11F, FontStyle.Bold, GraphicsUnit.Point);
             ajout_etudiant.ForeColor = Color.FromArgb(111, 31, 119);
             ajout_etudiant.Image = (Image)resources.GetObject("ajout_etudiant.Image");
-            ajout_etudiant.Location = new Point(1040, 137);
+            ajout_etudiant.Location = new Point(926, 130);
             ajout_etudiant.Name = "ajout_etudiant";
             ajout_etudiant.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            ajout_etudiant.Size = new Size(199, 58);
+            ajout_etudiant.Size = new Size(205, 58);
             ajout_etudiant.TabIndex = 11;
             ajout_etudiant.Text = "Ajouter etudiant";
             ajout_etudiant.Click += ajouter_etudiant;
@@ -393,7 +414,7 @@
             guna2Panel1.Margin = new Padding(4, 5, 4, 5);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            guna2Panel1.Size = new Size(297, 727);
+            guna2Panel1.Size = new Size(301, 1058);
             guna2Panel1.TabIndex = 12;
             // 
             // pictureBox1
@@ -543,13 +564,14 @@
             guna2Panel3.Margin = new Padding(4, 5, 4, 5);
             guna2Panel3.Name = "guna2Panel3";
             guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            guna2Panel3.Size = new Size(920, 110);
+            guna2Panel3.Size = new Size(812, 110);
             guna2Panel3.TabIndex = 13;
             // 
             // pictureBox4
             // 
+            pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(791, 13);
+            pictureBox4.Location = new Point(663, 21);
             pictureBox4.Margin = new Padding(4, 5, 4, 5);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(50, 51);
@@ -558,10 +580,11 @@
             // 
             // guna2HtmlLabel3
             // 
+            guna2HtmlLabel3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             guna2HtmlLabel3.BackColor = Color.Transparent;
             guna2HtmlLabel3.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel3.ForeColor = Color.FromArgb(111, 31, 119);
-            guna2HtmlLabel3.Location = new Point(836, 13);
+            guna2HtmlLabel3.Location = new Point(721, 21);
             guna2HtmlLabel3.Margin = new Padding(4, 5, 4, 5);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(87, 34);
@@ -591,20 +614,195 @@
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Etudiant";
             // 
+            // supprime
+            // 
+            supprime.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            supprime.BackColor = Color.White;
+            supprime.BorderColor = Color.FromArgb(192, 0, 192);
+            supprime.BorderRadius = 8;
+            supprime.BorderThickness = 1;
+            supprime.CustomizableEdges = customizableEdges35;
+            supprime.DisabledState.BorderColor = Color.DarkGray;
+            supprime.DisabledState.CustomBorderColor = Color.DarkGray;
+            supprime.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            supprime.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            supprime.FillColor = Color.White;
+            supprime.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            supprime.ForeColor = Color.FromArgb(111, 31, 119);
+            supprime.Location = new Point(711, 130);
+            supprime.Name = "supprime";
+            supprime.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            supprime.Size = new Size(200, 58);
+            supprime.TabIndex = 14;
+            supprime.Text = "Supprimer";
+            supprime.Click += supprime_Click;
+            // 
+            // dataetudiant
+            // 
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(225, 205, 233);
+            dataGridViewCellStyle1.Padding = new Padding(2);
+            dataetudiant.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataetudiant.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dataetudiant.BorderStyle = BorderStyle.FixedSingle;
+            dataetudiant.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(155, 89, 182);
+            dataGridViewCellStyle2.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(155, 89, 182);
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataetudiant.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataetudiant.ColumnHeadersHeight = 66;
+            dataetudiant.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataetudiant.Columns.AddRange(new DataGridViewColumn[] { matricule, nom, prenom, sexe, date, lieu, tel, nomf });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(188, 144, 206);
+            dataGridViewCellStyle3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle3.SelectionBackColor = Color.MediumOrchid;
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dataetudiant.DefaultCellStyle = dataGridViewCellStyle3;
+            dataetudiant.GridColor = Color.FromArgb(222, 201, 231);
+            dataetudiant.Location = new Point(321, 225);
+            dataetudiant.Name = "dataetudiant";
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(111, 31, 119);
+            dataGridViewCellStyle4.Font = new Font("Times New Roman", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(155, 89, 182);
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.Window;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dataetudiant.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataetudiant.RowHeadersVisible = false;
+            dataetudiant.RowHeadersWidth = 80;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.Font = new Font("Times New Roman", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(111, 31, 119);
+            dataetudiant.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataetudiant.RowTemplate.Height = 66;
+            dataetudiant.ScrollBars = ScrollBars.Horizontal;
+            dataetudiant.Size = new Size(821, 713);
+            dataetudiant.TabIndex = 3;
+            dataetudiant.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Amethyst;
+            dataetudiant.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(225, 205, 233);
+            dataetudiant.ThemeStyle.AlternatingRowsStyle.Font = null;
+            dataetudiant.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            dataetudiant.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            dataetudiant.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            dataetudiant.ThemeStyle.BackColor = Color.White;
+            dataetudiant.ThemeStyle.GridColor = Color.FromArgb(222, 201, 231);
+            dataetudiant.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(155, 89, 182);
+            dataetudiant.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataetudiant.ThemeStyle.HeaderStyle.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            dataetudiant.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            dataetudiant.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataetudiant.ThemeStyle.HeaderStyle.Height = 66;
+            dataetudiant.ThemeStyle.ReadOnly = false;
+            dataetudiant.ThemeStyle.RowsStyle.BackColor = Color.FromArgb(188, 144, 206);
+            dataetudiant.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataetudiant.ThemeStyle.RowsStyle.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataetudiant.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(64, 64, 64);
+            dataetudiant.ThemeStyle.RowsStyle.Height = 66;
+            dataetudiant.ThemeStyle.RowsStyle.SelectionBackColor = Color.MediumOrchid;
+            dataetudiant.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
+            dataetudiant.CellContentClick += guna2DataGridView1_CellContentClick;
+            // 
+            // matricule
+            // 
+            matricule.FillWeight = 162.148956F;
+            matricule.HeaderText = "Matricule";
+            matricule.MinimumWidth = 8;
+            matricule.Name = "matricule";
+            // 
+            // nom
+            // 
+            nom.FillWeight = 86.54513F;
+            nom.HeaderText = "Nom";
+            nom.MinimumWidth = 8;
+            nom.Name = "nom";
+            // 
+            // prenom
+            // 
+            prenom.FillWeight = 108.48658F;
+            prenom.HeaderText = "Prenom";
+            prenom.MinimumWidth = 8;
+            prenom.Name = "prenom";
+            // 
+            // sexe
+            // 
+            sexe.FillWeight = 69.72586F;
+            sexe.HeaderText = "Sexe";
+            sexe.MinimumWidth = 8;
+            sexe.Name = "sexe";
+            // 
+            // date
+            // 
+            date.FillWeight = 150.387985F;
+            date.HeaderText = "Date_Naissance";
+            date.MinimumWidth = 8;
+            date.Name = "date";
+            // 
+            // lieu
+            // 
+            lieu.FillWeight = 117.77243F;
+            lieu.HeaderText = "Lieu_Naissance";
+            lieu.MinimumWidth = 8;
+            lieu.Name = "lieu";
+            // 
+            // tel
+            // 
+            tel.FillWeight = 33.6552658F;
+            tel.HeaderText = "Tel";
+            tel.MinimumWidth = 8;
+            tel.Name = "tel";
+            // 
+            // nomf
+            // 
+            nomf.FillWeight = 71.27775F;
+            nomf.HeaderText = "Formation";
+            nomf.MinimumWidth = 8;
+            nomf.Name = "nomf";
+            // 
+            // modifier
+            // 
+            modifier.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            modifier.BackColor = Color.White;
+            modifier.BorderColor = Color.FromArgb(192, 0, 192);
+            modifier.BorderRadius = 8;
+            modifier.BorderThickness = 1;
+            modifier.CustomizableEdges = customizableEdges37;
+            modifier.DisabledState.BorderColor = Color.DarkGray;
+            modifier.DisabledState.CustomBorderColor = Color.DarkGray;
+            modifier.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            modifier.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            modifier.FillColor = Color.White;
+            modifier.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            modifier.ForeColor = Color.FromArgb(111, 31, 119);
+            modifier.Location = new Point(492, 130);
+            modifier.Name = "modifier";
+            modifier.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            modifier.Size = new Size(200, 58);
+            modifier.TabIndex = 15;
+            modifier.Text = "Modifier";
+            // 
             // Acceiul_etu
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1256, 702);
+            ClientSize = new Size(1143, 702);
+            Controls.Add(modifier);
+            Controls.Add(dataetudiant);
+            Controls.Add(supprime);
             Controls.Add(guna2Panel3);
             Controls.Add(guna2Panel1);
             Controls.Add(ajout_etudiant);
             Controls.Add(guna2Panel2);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 5, 4, 5);
-            MaximumSize = new Size(1842, 923);
-            MinimumSize = new Size(1269, 643);
             Name = "Acceiul_etu";
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
@@ -623,6 +821,7 @@
             guna2Panel3.ResumeLayout(false);
             guna2Panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataetudiant).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -655,5 +854,16 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2Button supprime;
+        private Guna.UI2.WinForms.Guna2DataGridView dataetudiant;
+        private DataGridViewTextBoxColumn matricule;
+        private DataGridViewTextBoxColumn nom;
+        private DataGridViewTextBoxColumn prenom;
+        private DataGridViewTextBoxColumn sexe;
+        private DataGridViewTextBoxColumn date;
+        private DataGridViewTextBoxColumn lieu;
+        private DataGridViewTextBoxColumn tel;
+        private DataGridViewTextBoxColumn nomf;
+        private Guna.UI2.WinForms.Guna2Button modifier;
     }
 }

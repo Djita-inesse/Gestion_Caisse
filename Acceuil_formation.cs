@@ -65,6 +65,7 @@ namespace Gestion_caise
         private void Acceuil_formation_Load(object sender, EventArgs e)
         {
             affiche_formation();
+            dataformation.Refresh();
 
         }
 
@@ -123,8 +124,19 @@ namespace Gestion_caise
 
         private void modifier_formation_Click(object sender, EventArgs e)
         {
-            Modifier_formation formulaire_modifier = new Modifier_formation();
-            formulaire_modifier.ShowDialog();
+            if (dataformation.SelectedRows.Count == 1)
+            {
+                DataGridViewRow rowselected = dataformation.SelectedRows[0];
+
+                Modifier_formation modifier_Formation = new Modifier_formation(rowselected);
+                modifier_Formation.ShowDialog();
+
+                dataformation.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Aucune ligne selectionné");
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -52,8 +53,51 @@ namespace Gestion_caise
 
         }
 
+        public void afficherEtudiant()
+        {
+            ConnexionBd connexion = new ConnexionBd();
+
+            string requete = "SELECT * FROM etudiant";
+            connexion.monconnection = new MySql.Data.MySqlClient.MySqlConnection(connexion.chaine_de_connexion);
+            connexion.command = new MySql.Data.MySqlClient.MySqlCommand(requete, connexion.monconnection);
+
+            try
+            {
+                connexion.monconnection.Open();
+                connexion.monreader = connexion.command.ExecuteReader();
+
+                while (connexion.monreader.Read())
+                {
+                    string matricule = connexion.monreader.GetString(0);
+                    string nom = connexion.monreader.GetString(1);
+                    string prenom = connexion.monreader.GetString(2);
+                    string sexe = connexion.monreader.GetString(3);
+                    DateTime date = connexion.monreader.GetDateTime(4);
+                    string lieu = connexion.monreader.GetString(5);
+                    string tel = connexion.monreader.GetString(6);
+                    string formation = connexion.monreader.GetString(7);
+
+                    dataetudiant.Rows.Add(matricule, nom, prenom, sexe, date, lieu, tel, formation);
+
+                }
+
+                connexion.monreader.Close();
+
+                connexion.monconnection.Close();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Une erreur s'est produite" + ex.Message);
+            }
+            finally
+            {
+                connexion.monconnection.Close();
+            }
+        }
+
         private void acceuil_etudiant_Load(object sender, EventArgs e)
         {
+            afficherEtudiant();
 
         }
 
@@ -109,6 +153,16 @@ namespace Gestion_caise
         }
 
         private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void supprime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
