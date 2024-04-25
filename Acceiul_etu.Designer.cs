@@ -786,6 +786,7 @@
             modifier.Size = new Size(200, 58);
             modifier.TabIndex = 15;
             modifier.Text = "Modifier";
+            modifier.Click += modifier_Click;
             // 
             // Acceiul_etu
             // 

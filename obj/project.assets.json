@@ -1923,24 +1923,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HIGH TECH\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\HP USA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HIGH TECH\\source\\repos\\Gestion_caise\\Gestion_caise.csproj",
+      "projectUniqueName": "C:\\Users\\HP USA\\Desktop\\caisse\\gestion_caise\\Gestion_caise.csproj",
       "projectName": "Gestion_caise",
-      "projectPath": "C:\\Users\\HIGH TECH\\source\\repos\\Gestion_caise\\Gestion_caise.csproj",
-      "packagesPath": "C:\\Users\\HIGH TECH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HIGH TECH\\source\\repos\\Gestion_caise\\obj\\",
+      "projectPath": "C:\\Users\\HP USA\\Desktop\\caisse\\gestion_caise\\Gestion_caise.csproj",
+      "packagesPath": "C:\\Users\\HP USA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP USA\\Desktop\\caisse\\gestion_caise\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\HIGH TECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\HP USA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1960,6 +1955,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1994,7 +1994,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

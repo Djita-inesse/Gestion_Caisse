@@ -162,7 +162,7 @@
             matricule.BorderColor = Color.DarkOrchid;
             matricule.BorderRadius = 8;
             matricule.CustomizableEdges = customizableEdges3;
-            matricule.DefaultText = "";
+            matricule.DefaultText = "matricule";
             matricule.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             matricule.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             matricule.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);

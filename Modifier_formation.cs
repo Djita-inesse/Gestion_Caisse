@@ -40,8 +40,8 @@ namespace Gestion_caise
 
 
         private void modifier_formation(object sender, EventArgs e)
-        { 
-            if(rowselected != null)
+        {
+            if (rowselected != null)
             {
                 string nouvelle_nom = nom_formation.Text;
                 string nouvelle_domaine = domaine_formation.Text;
@@ -53,13 +53,13 @@ namespace Gestion_caise
                 rowselected.Cells["duree"].Value = nouvelle_duree;
                 rowselected.Cells["cout"].Value = nouvelle_cout;
 
-                string requete = "UPDATE formation SET domaine='"+nouvelle_domaine+"', durée='"+nouvelle_duree+"', cout='"+nouvelle_cout+"' WHERE nomF='"+nouvelle_nom+"'";
+                string requete = "UPDATE formation SET domaine='" + nouvelle_domaine + "', durée='" + nouvelle_duree + "', cout='" + nouvelle_cout + "' WHERE nomF='" + nouvelle_nom + "'";
 
                 connexionBd.monconnection = new MySql.Data.MySqlClient.MySqlConnection(connexionBd.chaine_de_connexion);
-               
+
                 connexionBd.command = new MySql.Data.MySqlClient.MySqlCommand(requete, connexionBd.monconnection);
 
-                
+
 
                 try
                 {
@@ -67,7 +67,7 @@ namespace Gestion_caise
                     connexionBd.command.ExecuteNonQuery();
                     MessageBox.Show("modification effectuée avec succé");
                 }
-                catch(MySqlException ex)
+                catch (MySqlException ex)
                 {
                     MessageBox.Show("Une erreur s'est produite" + ex.Message);
 
@@ -79,6 +79,11 @@ namespace Gestion_caise
 
                 this.Close();
             }
+
+        }
+
+        private void nom_formation_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

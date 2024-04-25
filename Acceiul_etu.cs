@@ -166,5 +166,25 @@ namespace Gestion_caise
         {
 
         }
+
+        private void modifier_Click(object sender, EventArgs e)
+        {
+           if(dataetudiant.SelectedRows.Count != null)
+            {
+                DataGridViewRow ligne ;
+                ligne = dataetudiant.SelectedRows[0];
+                ModifierEtudiant modifie = new ModifierEtudiant(ligne);
+                modifie.ShowDialog();
+                dataetudiant.Refresh();
+
+            }
+           else
+            {
+                MessageBox.Show("aucune ligne n'a été selectionnée");
+            }
+            
+
+            
+        }
     }
 }

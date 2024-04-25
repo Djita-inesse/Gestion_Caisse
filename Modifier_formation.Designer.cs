@@ -72,14 +72,15 @@
             duree_formation.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             duree_formation.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             duree_formation.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            duree_formation.Location = new Point(86, 154);
+            duree_formation.Location = new Point(123, 257);
+            duree_formation.Margin = new Padding(4, 5, 4, 5);
             duree_formation.Name = "duree_formation";
             duree_formation.PasswordChar = '\0';
             duree_formation.PlaceholderForeColor = Color.Gray;
             duree_formation.PlaceholderText = "Durée";
             duree_formation.SelectedText = "";
             duree_formation.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            duree_formation.Size = new Size(220, 30);
+            duree_formation.Size = new Size(314, 50);
             duree_formation.TabIndex = 38;
             // 
             // cout_formation
@@ -96,14 +97,15 @@
             cout_formation.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             cout_formation.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             cout_formation.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            cout_formation.Location = new Point(86, 190);
+            cout_formation.Location = new Point(123, 317);
+            cout_formation.Margin = new Padding(4, 5, 4, 5);
             cout_formation.Name = "cout_formation";
             cout_formation.PasswordChar = '\0';
             cout_formation.PlaceholderForeColor = Color.Gray;
             cout_formation.PlaceholderText = "Cout";
             cout_formation.SelectedText = "";
             cout_formation.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            cout_formation.Size = new Size(220, 30);
+            cout_formation.Size = new Size(314, 50);
             cout_formation.TabIndex = 37;
             // 
             // nom_formation
@@ -120,15 +122,17 @@
             nom_formation.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             nom_formation.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             nom_formation.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            nom_formation.Location = new Point(86, 82);
+            nom_formation.Location = new Point(123, 137);
+            nom_formation.Margin = new Padding(4, 5, 4, 5);
             nom_formation.Name = "nom_formation";
             nom_formation.PasswordChar = '\0';
             nom_formation.PlaceholderForeColor = Color.Gray;
             nom_formation.PlaceholderText = "Nom";
             nom_formation.SelectedText = "";
             nom_formation.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            nom_formation.Size = new Size(220, 30);
+            nom_formation.Size = new Size(314, 50);
             nom_formation.TabIndex = 36;
+            nom_formation.TextChanged += nom_formation_TextChanged;
             // 
             // domaine_formation
             // 
@@ -144,22 +148,24 @@
             domaine_formation.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             domaine_formation.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             domaine_formation.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            domaine_formation.Location = new Point(86, 118);
+            domaine_formation.Location = new Point(123, 197);
+            domaine_formation.Margin = new Padding(4, 5, 4, 5);
             domaine_formation.Name = "domaine_formation";
             domaine_formation.PasswordChar = '\0';
             domaine_formation.PlaceholderForeColor = Color.Gray;
             domaine_formation.PlaceholderText = "Domaine";
             domaine_formation.SelectedText = "";
             domaine_formation.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            domaine_formation.Size = new Size(220, 30);
+            domaine_formation.Size = new Size(314, 50);
             domaine_formation.TabIndex = 35;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(304, -1);
+            pictureBox3.Location = new Point(434, -2);
+            pictureBox3.Margin = new Padding(4, 5, 4, 5);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(80, 77);
+            pictureBox3.Size = new Size(114, 128);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 47;
             pictureBox3.TabStop = false;
@@ -167,9 +173,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1, -1);
+            pictureBox2.Location = new Point(1, -2);
+            pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(71, 83);
+            pictureBox2.Size = new Size(101, 138);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 46;
             pictureBox2.TabStop = false;
@@ -181,9 +188,10 @@
             label1.FlatStyle = FlatStyle.Popup;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(99, 49);
+            label1.Location = new Point(141, 82);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(190, 21);
+            label1.Size = new Size(285, 32);
             label1.TabIndex = 45;
             label1.Text = "Modifier une formation";
             // 
@@ -199,10 +207,11 @@
             guna2Button3.FillColor = Color.FromArgb(217, 217, 217);
             guna2Button3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2Button3.ForeColor = Color.DarkMagenta;
-            guna2Button3.Location = new Point(216, 226);
+            guna2Button3.Location = new Point(309, 377);
+            guna2Button3.Margin = new Padding(4, 5, 4, 5);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2Button3.Size = new Size(90, 24);
+            guna2Button3.Size = new Size(129, 40);
             guna2Button3.TabIndex = 51;
             guna2Button3.Text = "Annuler";
             // 
@@ -217,10 +226,11 @@
             modifier.FillColor = Color.FromArgb(111, 31, 119);
             modifier.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             modifier.ForeColor = Color.White;
-            modifier.Location = new Point(86, 226);
+            modifier.Location = new Point(123, 377);
+            modifier.Margin = new Padding(4, 5, 4, 5);
             modifier.Name = "modifier";
             modifier.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            modifier.Size = new Size(80, 24);
+            modifier.Size = new Size(114, 40);
             modifier.TabIndex = 50;
             modifier.Text = "Modifier";
             modifier.Click += modifier_formation;
@@ -228,9 +238,10 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(267, 256);
+            pictureBox4.Location = new Point(381, 427);
+            pictureBox4.Margin = new Padding(4, 5, 4, 5);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(116, 106);
+            pictureBox4.Size = new Size(166, 177);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 49;
             pictureBox4.TabStop = false;
@@ -238,19 +249,20 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1, 280);
+            pictureBox1.Location = new Point(1, 467);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(120, 82);
+            pictureBox1.Size = new Size(171, 137);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 48;
             pictureBox1.TabStop = false;
             // 
             // Modifier_formation
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(381, 360);
+            ClientSize = new Size(544, 600);
             Controls.Add(guna2Button3);
             Controls.Add(modifier);
             Controls.Add(pictureBox4);
@@ -262,7 +274,6 @@
             Controls.Add(cout_formation);
             Controls.Add(nom_formation);
             Controls.Add(domaine_formation);
-            Margin = new Padding(2, 2, 2, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Modifier_formation";
