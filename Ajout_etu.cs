@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Guna.UI2.WinForms;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +26,7 @@ namespace Gestion_caise
 
             connexion.monconnection = new MySql.Data.MySqlClient.MySqlConnection(connexion.chaine_de_connexion);
             connexion.command = new MySql.Data.MySqlClient.MySqlCommand(requete, connexion.monconnection);
-
+            
             try
             {
                 connexion.monconnection.Open();
@@ -148,14 +149,15 @@ namespace Gestion_caise
             etudiantClasse.lieu = lieu_naiss.Text;
             etudiantClasse.tel = telephon.Text;
             etudiantClasse.nomF = listeformation.SelectedItem.ToString();
+           
 
 
 
 
             ConnexionBd connexion = new ConnexionBd();
             string requete = "INSERT INTO etudiant(matricule, nomE, prenom, sexe, date_naissance, lieu_naissance, telephone, nomF) VALUES(@matricule,@nom,@prenom,@sexe,@date,@lieu,@tel,@nomF)";
-
             
+             
             try
             {
                 connexion.monconnection = new MySqlConnection(connexion.chaine_de_connexion);
@@ -170,10 +172,12 @@ namespace Gestion_caise
                 connexion.command.Parameters.AddWithValue("@lieu", etudiantClasse.lieu);
                 connexion.command.Parameters.AddWithValue("@tel", etudiantClasse.tel);
                 connexion.command.Parameters.AddWithValue("@nomF", etudiantClasse.nomF);
+                
 
                 connexion.monconnection.Open();
                 connexion.command.ExecuteNonQuery();
             }
+            
             catch (MySqlException ex)
             {
                 MessageBox.Show("une erreur s'est produite", ex.Message);
@@ -183,6 +187,9 @@ namespace Gestion_caise
             {
                 connexion.monconnection.Close();
             }
+            
+            
+            
 
 
         }

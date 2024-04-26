@@ -50,12 +50,11 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifierEtudiant));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifierEtudiant));
             date_naiss = new Guna.UI2.WinForms.Guna2DateTimePicker();
             sexe = new Guna.UI2.WinForms.Guna2ComboBox();
-            listeformation = new Guna.UI2.WinForms.Guna2ComboBox();
             niveau = new Guna.UI2.WinForms.Guna2TextBox();
             telephon = new Guna.UI2.WinForms.Guna2TextBox();
             lieu_naiss = new Guna.UI2.WinForms.Guna2TextBox();
@@ -64,12 +63,13 @@
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             matricule = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            modifier_etudiant = new Guna.UI2.WinForms.Guna2Button();
             pictureBox4 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             label1 = new Label();
+            nomf = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -111,28 +111,11 @@
             sexe.TabIndex = 42;
             sexe.SelectedIndexChanged += sexe_SelectedIndexChanged;
             // 
-            // listeformation
-            // 
-            listeformation.BackColor = Color.Transparent;
-            listeformation.CustomizableEdges = customizableEdges5;
-            listeformation.DrawMode = DrawMode.OwnerDrawFixed;
-            listeformation.DropDownStyle = ComboBoxStyle.DropDownList;
-            listeformation.FocusedColor = Color.FromArgb(94, 148, 255);
-            listeformation.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            listeformation.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            listeformation.ForeColor = Color.FromArgb(68, 88, 112);
-            listeformation.ItemHeight = 30;
-            listeformation.Location = new Point(135, 627);
-            listeformation.Name = "listeformation";
-            listeformation.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            listeformation.Size = new Size(314, 36);
-            listeformation.TabIndex = 41;
-            // 
             // niveau
             // 
             niveau.BorderColor = Color.DarkOrchid;
             niveau.BorderRadius = 8;
-            niveau.CustomizableEdges = customizableEdges7;
+            niveau.CustomizableEdges = customizableEdges5;
             niveau.DefaultText = "Niveau d'etude";
             niveau.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             niveau.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -148,7 +131,7 @@
             niveau.PasswordChar = '\0';
             niveau.PlaceholderText = "niveau etude";
             niveau.SelectedText = "";
-            niveau.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            niveau.ShadowDecoration.CustomizableEdges = customizableEdges6;
             niveau.Size = new Size(314, 50);
             niveau.TabIndex = 40;
             // 
@@ -156,7 +139,7 @@
             // 
             telephon.BorderColor = Color.DarkOrchid;
             telephon.BorderRadius = 8;
-            telephon.CustomizableEdges = customizableEdges9;
+            telephon.CustomizableEdges = customizableEdges7;
             telephon.DefaultText = "";
             telephon.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             telephon.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -173,7 +156,7 @@
             telephon.PlaceholderForeColor = Color.Gray;
             telephon.PlaceholderText = "Tel";
             telephon.SelectedText = "";
-            telephon.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            telephon.ShadowDecoration.CustomizableEdges = customizableEdges8;
             telephon.Size = new Size(314, 50);
             telephon.TabIndex = 39;
             // 
@@ -181,7 +164,7 @@
             // 
             lieu_naiss.BorderColor = Color.DarkOrchid;
             lieu_naiss.BorderRadius = 8;
-            lieu_naiss.CustomizableEdges = customizableEdges11;
+            lieu_naiss.CustomizableEdges = customizableEdges9;
             lieu_naiss.DefaultText = "";
             lieu_naiss.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             lieu_naiss.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -198,7 +181,7 @@
             lieu_naiss.PlaceholderForeColor = Color.Gray;
             lieu_naiss.PlaceholderText = "Lieu Naissance";
             lieu_naiss.SelectedText = "";
-            lieu_naiss.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            lieu_naiss.ShadowDecoration.CustomizableEdges = customizableEdges10;
             lieu_naiss.Size = new Size(314, 50);
             lieu_naiss.TabIndex = 38;
             // 
@@ -206,7 +189,7 @@
             // 
             nom.BorderColor = Color.DarkOrchid;
             nom.BorderRadius = 8;
-            nom.CustomizableEdges = customizableEdges13;
+            nom.CustomizableEdges = customizableEdges11;
             nom.DefaultText = "";
             nom.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             nom.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -223,7 +206,7 @@
             nom.PlaceholderForeColor = Color.Gray;
             nom.PlaceholderText = "Nom ";
             nom.SelectedText = "";
-            nom.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            nom.ShadowDecoration.CustomizableEdges = customizableEdges12;
             nom.Size = new Size(314, 50);
             nom.TabIndex = 37;
             // 
@@ -231,7 +214,7 @@
             // 
             prenom.BorderColor = Color.DarkOrchid;
             prenom.BorderRadius = 8;
-            prenom.CustomizableEdges = customizableEdges15;
+            prenom.CustomizableEdges = customizableEdges13;
             prenom.DefaultText = "";
             prenom.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             prenom.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -248,13 +231,13 @@
             prenom.PlaceholderForeColor = Color.Gray;
             prenom.PlaceholderText = "Prenom";
             prenom.SelectedText = "";
-            prenom.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            prenom.ShadowDecoration.CustomizableEdges = customizableEdges14;
             prenom.Size = new Size(314, 50);
             prenom.TabIndex = 36;
             // 
             // guna2Button2
             // 
-            guna2Button2.CustomizableEdges = customizableEdges17;
+            guna2Button2.CustomizableEdges = customizableEdges15;
             guna2Button2.DisabledState.BorderColor = Color.DarkGray;
             guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -265,7 +248,7 @@
             guna2Button2.Location = new Point(310, 418);
             guna2Button2.Margin = new Padding(4, 5, 4, 5);
             guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2Button2.Size = new Size(124, 40);
             guna2Button2.TabIndex = 35;
             guna2Button2.Text = "guna2Button2";
@@ -274,7 +257,7 @@
             // 
             matricule.BorderColor = Color.DarkOrchid;
             matricule.BorderRadius = 8;
-            matricule.CustomizableEdges = customizableEdges19;
+            matricule.CustomizableEdges = customizableEdges17;
             matricule.DefaultText = "";
             matricule.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             matricule.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -291,7 +274,7 @@
             matricule.PlaceholderForeColor = Color.Gray;
             matricule.PlaceholderText = "Matricule";
             matricule.SelectedText = "";
-            matricule.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            matricule.ShadowDecoration.CustomizableEdges = customizableEdges18;
             matricule.Size = new Size(314, 50);
             matricule.TabIndex = 34;
             // 
@@ -299,7 +282,7 @@
             // 
             guna2Button3.BackColor = Color.White;
             guna2Button3.BorderRadius = 8;
-            guna2Button3.CustomizableEdges = customizableEdges21;
+            guna2Button3.CustomizableEdges = customizableEdges19;
             guna2Button3.DisabledState.BorderColor = Color.DarkGray;
             guna2Button3.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -310,29 +293,30 @@
             guna2Button3.Location = new Point(310, 715);
             guna2Button3.Margin = new Padding(4, 5, 4, 5);
             guna2Button3.Name = "guna2Button3";
-            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges20;
             guna2Button3.Size = new Size(137, 40);
             guna2Button3.TabIndex = 47;
             guna2Button3.Text = "Annuler";
             // 
-            // guna2Button1
+            // modifier_etudiant
             // 
-            guna2Button1.BorderRadius = 8;
-            guna2Button1.CustomizableEdges = customizableEdges23;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.FromArgb(111, 31, 119);
-            guna2Button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(133, 715);
-            guna2Button1.Margin = new Padding(4, 5, 4, 5);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            guna2Button1.Size = new Size(124, 40);
-            guna2Button1.TabIndex = 46;
-            guna2Button1.Text = "Enregistrer";
+            modifier_etudiant.BorderRadius = 8;
+            modifier_etudiant.CustomizableEdges = customizableEdges21;
+            modifier_etudiant.DisabledState.BorderColor = Color.DarkGray;
+            modifier_etudiant.DisabledState.CustomBorderColor = Color.DarkGray;
+            modifier_etudiant.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            modifier_etudiant.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            modifier_etudiant.FillColor = Color.FromArgb(111, 31, 119);
+            modifier_etudiant.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            modifier_etudiant.ForeColor = Color.White;
+            modifier_etudiant.Location = new Point(133, 715);
+            modifier_etudiant.Margin = new Padding(4, 5, 4, 5);
+            modifier_etudiant.Name = "modifier_etudiant";
+            modifier_etudiant.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            modifier_etudiant.Size = new Size(124, 40);
+            modifier_etudiant.TabIndex = 46;
+            modifier_etudiant.Text = "Modifier";
+            modifier_etudiant.Click += guna2Button1_Click;
             // 
             // pictureBox4
             // 
@@ -392,21 +376,41 @@
             label1.TabIndex = 48;
             label1.Text = "Modifier etudiant";
             // 
+            // nomf
+            // 
+            nomf.CustomizableEdges = customizableEdges23;
+            nomf.DefaultText = "Nom Formation";
+            nomf.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            nomf.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            nomf.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            nomf.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            nomf.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            nomf.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            nomf.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            nomf.Location = new Point(133, 642);
+            nomf.Name = "nomf";
+            nomf.PasswordChar = '\0';
+            nomf.PlaceholderText = "";
+            nomf.SelectedText = "";
+            nomf.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            nomf.Size = new Size(314, 54);
+            nomf.TabIndex = 51;
+            // 
             // ModifierEtudiant
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(579, 879);
+            Controls.Add(nomf);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(label1);
             Controls.Add(guna2Button3);
-            Controls.Add(guna2Button1);
+            Controls.Add(modifier_etudiant);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox1);
             Controls.Add(date_naiss);
             Controls.Add(sexe);
-            Controls.Add(listeformation);
             Controls.Add(niveau);
             Controls.Add(telephon);
             Controls.Add(lieu_naiss);
@@ -429,7 +433,6 @@
 
         private Guna.UI2.WinForms.Guna2DateTimePicker date_naiss;
         private Guna.UI2.WinForms.Guna2ComboBox sexe;
-        private Guna.UI2.WinForms.Guna2ComboBox listeformation;
         private Guna.UI2.WinForms.Guna2TextBox niveau;
         private Guna.UI2.WinForms.Guna2TextBox telephon;
         private Guna.UI2.WinForms.Guna2TextBox lieu_naiss;
@@ -438,11 +441,12 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2TextBox matricule;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button modifier_etudiant;
         private PictureBox pictureBox4;
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox nomf;
     }
 }

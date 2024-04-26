@@ -73,6 +73,8 @@
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             guna2CirclePictureBox6 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -95,7 +97,7 @@
             parametre = new Guna.UI2.WinForms.Guna2Button();
             formation = new Guna.UI2.WinForms.Guna2Button();
             payement = new Guna.UI2.WinForms.Guna2Button();
-            guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            actualise = new Guna.UI2.WinForms.Guna2Panel();
             pictureBox4 = new PictureBox();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -111,6 +113,7 @@
             tel = new DataGridViewTextBoxColumn();
             nomf = new DataGridViewTextBoxColumn();
             modifier = new Guna.UI2.WinForms.Guna2Button();
+            actu = new Guna.UI2.WinForms.Guna2Button();
             guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox5).BeginInit();
@@ -121,7 +124,7 @@
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            guna2Panel3.SuspendLayout();
+            actualise.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataetudiant).BeginInit();
             SuspendLayout();
@@ -396,6 +399,7 @@
             // 
             // guna2Panel1
             // 
+            guna2Panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             guna2Panel1.AutoSize = true;
             guna2Panel1.BackColor = Color.FromArgb(111, 31, 119);
             guna2Panel1.BorderColor = Color.Silver;
@@ -409,11 +413,11 @@
             guna2Panel1.Controls.Add(formation);
             guna2Panel1.Controls.Add(payement);
             guna2Panel1.CustomizableEdges = customizableEdges31;
-            guna2Panel1.Location = new Point(13, 2);
+            guna2Panel1.Location = new Point(10, 7);
             guna2Panel1.Margin = new Padding(4, 5, 4, 5);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            guna2Panel1.Size = new Size(301, 686);
+            guna2Panel1.Size = new Size(301, 711);
             guna2Panel1.TabIndex = 12;
             // 
             // pictureBox1
@@ -548,23 +552,23 @@
             payement.TabIndex = 3;
             payement.Text = "Payement";
             // 
-            // guna2Panel3
+            // actualise
             // 
-            guna2Panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            guna2Panel3.BorderColor = Color.Silver;
-            guna2Panel3.BorderRadius = 20;
-            guna2Panel3.BorderThickness = 1;
-            guna2Panel3.Controls.Add(pictureBox4);
-            guna2Panel3.Controls.Add(guna2HtmlLabel3);
-            guna2Panel3.Controls.Add(guna2HtmlLabel2);
-            guna2Panel3.Controls.Add(guna2HtmlLabel1);
-            guna2Panel3.CustomizableEdges = customizableEdges33;
-            guna2Panel3.Location = new Point(319, 7);
-            guna2Panel3.Margin = new Padding(4, 5, 4, 5);
-            guna2Panel3.Name = "guna2Panel3";
-            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            guna2Panel3.Size = new Size(812, 110);
-            guna2Panel3.TabIndex = 13;
+            actualise.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            actualise.BorderColor = Color.Silver;
+            actualise.BorderRadius = 20;
+            actualise.BorderThickness = 1;
+            actualise.Controls.Add(pictureBox4);
+            actualise.Controls.Add(guna2HtmlLabel3);
+            actualise.Controls.Add(guna2HtmlLabel2);
+            actualise.Controls.Add(guna2HtmlLabel1);
+            actualise.CustomizableEdges = customizableEdges33;
+            actualise.Location = new Point(319, 7);
+            actualise.Margin = new Padding(4, 5, 4, 5);
+            actualise.Name = "actualise";
+            actualise.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            actualise.Size = new Size(812, 110);
+            actualise.TabIndex = 13;
             // 
             // pictureBox4
             // 
@@ -628,7 +632,7 @@
             supprime.FillColor = Color.White;
             supprime.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
             supprime.ForeColor = Color.FromArgb(111, 31, 119);
-            supprime.Location = new Point(711, 130);
+            supprime.Location = new Point(720, 130);
             supprime.Name = "supprime";
             supprime.ShadowDecoration.CustomizableEdges = customizableEdges36;
             supprime.Size = new Size(200, 58);
@@ -780,7 +784,7 @@
             modifier.FillColor = Color.White;
             modifier.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
             modifier.ForeColor = Color.FromArgb(111, 31, 119);
-            modifier.Location = new Point(492, 130);
+            modifier.Location = new Point(514, 130);
             modifier.Name = "modifier";
             modifier.ShadowDecoration.CustomizableEdges = customizableEdges38;
             modifier.Size = new Size(200, 58);
@@ -788,16 +792,40 @@
             modifier.Text = "Modifier";
             modifier.Click += modifier_Click;
             // 
+            // actu
+            // 
+            actu.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            actu.BackColor = Color.White;
+            actu.BorderColor = Color.FromArgb(192, 0, 192);
+            actu.BorderRadius = 8;
+            actu.BorderThickness = 1;
+            actu.CustomizableEdges = customizableEdges39;
+            actu.DisabledState.BorderColor = Color.DarkGray;
+            actu.DisabledState.CustomBorderColor = Color.DarkGray;
+            actu.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            actu.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            actu.FillColor = Color.White;
+            actu.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            actu.ForeColor = Color.FromArgb(111, 31, 119);
+            actu.Location = new Point(319, 130);
+            actu.Name = "actu";
+            actu.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            actu.Size = new Size(189, 58);
+            actu.TabIndex = 16;
+            actu.Text = "Actualiser";
+            actu.Click += guna2Button2_Click_1;
+            // 
             // Acceiul_etu
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1143, 702);
+            Controls.Add(actu);
             Controls.Add(modifier);
             Controls.Add(dataetudiant);
             Controls.Add(supprime);
-            Controls.Add(guna2Panel3);
+            Controls.Add(actualise);
             Controls.Add(guna2Panel1);
             Controls.Add(ajout_etudiant);
             Controls.Add(guna2Panel2);
@@ -818,8 +846,8 @@
             guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            guna2Panel3.ResumeLayout(false);
-            guna2Panel3.PerformLayout();
+            actualise.ResumeLayout(false);
+            actualise.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataetudiant).EndInit();
             ResumeLayout(false);
@@ -849,7 +877,7 @@
         private Guna.UI2.WinForms.Guna2Button parametre;
         private Guna.UI2.WinForms.Guna2Button formation;
         private Guna.UI2.WinForms.Guna2Button payement;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Panel actualise;
         private PictureBox pictureBox4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
@@ -865,5 +893,6 @@
         private DataGridViewTextBoxColumn tel;
         private DataGridViewTextBoxColumn nomf;
         private Guna.UI2.WinForms.Guna2Button modifier;
+        private Guna.UI2.WinForms.Guna2Button actu;
     }
 }

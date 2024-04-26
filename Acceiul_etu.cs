@@ -144,7 +144,9 @@ namespace Gestion_caise
         private void ajouter_etudiant(object sender, EventArgs e)
         {
             Ajout_etu etudiant = new Ajout_etu();
+
             etudiant.ShowDialog();
+
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
@@ -159,7 +161,40 @@ namespace Gestion_caise
 
         private void supprime_Click(object sender, EventArgs e)
         {
+            ConnexionBd conn = new ConnexionBd();
+            if (dataetudiant.SelectedRows.Count == 1)
+            {
+                int rowselected = dataetudiant.SelectedRows[0].Index;
+                string matricule = dataetudiant.Rows[rowselected].Cells["matricule"].Value.ToString();
 
+                DialogResult resultat = MessageBox.Show("Voulez vous supprimer l'etudiant " + matricule, "Confirmation", MessageBoxButtons.YesNo);
+
+                if (resultat == DialogResult.Yes)
+                {
+                    string requete = "DELETE FROM etudiant WHERE matricule = @matricule";
+
+                    dataetudiant.Rows.RemoveAt(rowselected);
+                    conn.monconnection = new MySqlConnection(conn.chaine_de_connexion);
+                    conn.command = new MySqlCommand(requete, conn.monconnection);
+                    conn.command.Parameters.AddWithValue("@matricule", matricule);
+                    try
+                    {
+                        conn.monconnection.Open();
+                        conn.command.ExecuteNonQuery();
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show("une erreur s'est produite");
+                    }
+                    finally
+                    {
+                        conn.monconnection.Close();
+                    }
+
+
+                }
+
+            }
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -169,22 +204,28 @@ namespace Gestion_caise
 
         private void modifier_Click(object sender, EventArgs e)
         {
-           if(dataetudiant.SelectedRows.Count != null)
+            if (dataetudiant.SelectedRows.Count != null)
             {
-                DataGridViewRow ligne ;
+                DataGridViewRow ligne;
                 ligne = dataetudiant.SelectedRows[0];
                 ModifierEtudiant modifie = new ModifierEtudiant(ligne);
                 modifie.ShowDialog();
                 dataetudiant.Refresh();
 
             }
-           else
+            else
             {
                 MessageBox.Show("aucune ligne n'a été selectionnée");
             }
-            
 
-            
+
+
+        }
+
+        private void guna2Button2_Click_1(object sender, EventArgs e)
+        {
+            dataetudiant.Rows.Clear();
+            afficherEtudiant();
         }
     }
 }
